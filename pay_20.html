@@ -1,21 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Pay ₹20 - NavyaBot</title>
-  <style>
-    body { font-family: Arial; text-align:center; padding:50px; background:#f9f9f9; }
-    .btn { background:#4CAF50; color:white; padding:15px 30px; text-decoration:none; border-radius:5px; font-size:20px; display:inline-block; margin:20px; }
-    img { margin-top: 20px; width:250px; border:1px solid #ddd; border-radius:8px; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buy ₹20 Credits</title>
+<style>
+  body { font-family: Poppins, sans-serif; background:#f5f5f5; }
+  .card {
+    max-width:500px; margin:40px auto; background:#fff; padding:30px;
+    border-radius:15px; box-shadow:0 4px 10px rgba(0,0,0,.08); text-align:center;
+  }
+  .pay-btn {
+    display:inline-block; background:#007bff; color:#fff; padding:12px 25px;
+    border-radius:30px; margin:8px; text-decoration:none; font-weight:600;
+  }
+  .note { margin-top:20px; color:#666; font-size:14px; }
+  .alt-link { margin-top:15px; color:#888; font-size:14px; }
+  .alt-link a { color:#007bff; text-decoration:none; font-weight:600; }
+</style>
 </head>
 <body>
-  <h1>💰 ₹20 Plan</h1>
-  <a class="btn" href="upi://pay?pa=subh207047@okhdfcbank&pn=Subhash%20Kumar&am=20&cu=INR&tn=Buy%205000%20Credits">Pay ₹20 via UPI</a>
-  <div>
-    <p>Or scan QR code to pay instantly:</p>
-    <img src="https://github.com/subhgit370/payment_qr_images/raw/main/qr_20.jpg" alt="QR ₹20">
-  </div>
-  <p>Click the button above or scan the QR code to pay instantly.</p>
+
+<div class="card">
+  <h2 style="color:#007bff;margin-bottom:20px;">Buy ₹20 Credit</h2>
+  <p style="color:#555;">Get <b>5000 Credits</b> instantly after payment.</p>
+
+  <a href="upi://pay?pa=subh207047@okhdfcbank&pn=Subhash%20Kumar&am=20&cu=INR&tn=Buy%205000%20Credits" class="pay-btn">
+     Pay ₹20 Now
+  </a>
+
+  <p class="note">
+    After payment, please share your UPI receipt or screenshot with our Telegram bot to get your credits.
+  </p>
+
+  <p class="alt-link">
+    If you don’t have any UPI app, 
+    <a href="https://github.com/subhgit370/payment_qr_images/raw/main/qr_20.jpg" target="_blank">click here</a>.
+  </p>
+</div>
+
 </body>
 </html>
